@@ -15,11 +15,17 @@
         background-color: red;
         height: 50%;
         width: 50%;
-        transition: transform 1s ease-in-out;
     }
 
     .parent:hover .child{
-        transform: translate(100%);
+        animation: left-to-right 1s ease-in forwards;
+    }
+    
+    @keyframes left-to-right {
+        100%{
+            transform: translateX(100%);
+        }
+        
     }
 </style>
 <body>
